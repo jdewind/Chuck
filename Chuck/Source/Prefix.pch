@@ -1,0 +1,19 @@
+//
+// Prefix header for all source files of the 'Launchy' target in the 'Launchy' project
+//
+
+#ifdef __OBJC__
+    #import <Cocoa/Cocoa.h>
+	
+	// Add our debug logging function.
+    #ifdef DEBUG
+        #define DLog(s, ...) \
+            CFShow([NSString stringWithFormat:@"%@:%d %@", \
+                    [[NSString stringWithUTF8String:__FILE__] lastPathComponent], \
+                    __LINE__, \
+                    [NSString stringWithFormat:s, ##__VA_ARGS__], \
+                    nil])
+    #else
+        #define DLog(s, ...)
+    #endif
+#endif
