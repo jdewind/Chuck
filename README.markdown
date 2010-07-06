@@ -10,3 +10,7 @@ Currently available for OS X 10.6 (Snow Leopard) and above.
 ![Preferences window](http://cloud.github.com/downloads/msanders/Chuck/preferences.png)
 
 ![Menu bar item](http://cloud.github.com/downloads/msanders/Chuck/menubar-stache.png)
+
+## License
+
+Chuck is released under the [MIT License](http://github.com/msanders/Chuck/blob/master/LICENSE.txt).
