@@ -45,6 +45,9 @@
         // Pull the window up to status level.
         [self setLevel:NSStatusWindowLevel];
 
+        // Make window appear on all spaces.
+        [self setCollectionBehavior:NSWindowCollectionBehaviorCanJoinAllSpaces];
+
         // Fade out on deactivation and fade in when called to front.
         NSNotificationCenter *defaultCenter = [NSNotificationCenter defaultCenter];
         [defaultCenter addObserver:self

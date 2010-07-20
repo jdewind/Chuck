@@ -60,7 +60,7 @@ static PreferencesController *sharedPreferencesController = nil;
             CFURLCreateWithFileSystemPath(kCFAllocatorDefault,
                                           (CFStringRef)appPath,
                                           kCFURLPOSIXPathStyle,
-                                          TRUE);
+                                          true);
         if (appURL != NULL) {
             openAtLogin = isLoginItem(appURL, false) ? YES : NO;
             CFRelease(appURL);
