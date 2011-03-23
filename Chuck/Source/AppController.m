@@ -146,13 +146,10 @@
 
 - (IBAction)filterApps:(id)sender
 {
-    NSTextField *textField = (NSSearchField *)sender;
-    if (textField != searchField) return;
-
     NSAutoreleasePool *pool = [[NSAutoreleasePool alloc] init];
 
     // Get the application name.
-    NSString *term = [textField stringValue];
+    NSString *term = [searchField stringValue];
     NSString *appName = @"";
     NSString *appPath = nil;
     if ([term length] > 0) {
@@ -355,6 +352,9 @@ doCommandBySelector:(SEL)command
 {
     [spinner stopAnimation:nil];
     [self setSearchFieldEnabled:YES];
+
+    // Refresh any term the user may have entered.
+    [self filterApps:nil];
 }
 
 #pragma mark -
