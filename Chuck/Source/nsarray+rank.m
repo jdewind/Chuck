@@ -70,7 +70,9 @@
 
 - (id)initWithItem:(id <RankableObject>)anItem score:(CGFloat)someScore
 {
-    if (self = [super init]) {
+    self = [super init];
+
+    if (self != nil) {
         item = [anItem retain];
         score = someScore;
     }

@@ -54,7 +54,9 @@ static PreferencesController *sharedPreferencesController = nil;
 
 - (id)init
 {
-    if (self = [super initWithWindowNibName:@"Preferences"]) {
+    self = [super initWithWindowNibName:@"Preferences"];
+
+    if (self != nil) {
         NSString *appPath = [[NSBundle mainBundle] bundlePath];
         CFURLRef appURL =
             CFURLCreateWithFileSystemPath(kCFAllocatorDefault,

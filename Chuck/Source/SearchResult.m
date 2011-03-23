@@ -16,7 +16,9 @@
 // Designated initializer.
 - (id)initWithName:(NSString *)newName path:(NSString *)newPath
 {
-    if (self = [super init]) {
+    self = [super init];
+
+    if (self != nil) {
         name = [newName copy];
         path = [newPath copy];
     }

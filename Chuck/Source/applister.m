@@ -52,7 +52,9 @@ static BOOL directoryContainsPath(NSString *dir, NSString *path)
 // Designated initializer.
 - (id)initWithDelegate:(id <AppListerDelegate>)newDelegate
 {
-    if (self = [super init]) {
+    self = [super init];
+
+    if (self != nil) {
         list = [[NSMutableSet alloc] init];
         delegate = newDelegate;
         maxRecurseLevel = 3;

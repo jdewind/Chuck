@@ -25,15 +25,18 @@
                   backing:(NSBackingStoreType)bufferingType
                     defer:(BOOL)flag
 {
-
+    
     // Pass NSBorderlessWindowMask for the styleMask so we don't get a title
     // bar, and an NSTexturedBackgroundWindowMask so the user can drag
     // the window.
     styleMask = NSBorderlessWindowMask | NSTexturedBackgroundWindowMask;
-    if (self = [super initWithContentRect:contentRect
-                                styleMask:styleMask
-                                  backing:bufferingType
-                                    defer:flag]) {
+
+    self = [super initWithContentRect:contentRect
+                            styleMask:styleMask
+                              backing:bufferingType
+                                defer:flag];
+
+    if (self != nil) {
 
         // Set window to be clear and non-opaque so we can see through it.
         [self setBackgroundColor:[NSColor clearColor]];

@@ -17,7 +17,9 @@
 - (id)initWithKeyCode:(unsigned short)code
             modifiers:(NSUInteger)modifiers
 {
-    if (self = [super init]) {
+    self = [super init];
+
+    if (self != nil) {
         keyCode = code;
         modifierFlags = modifiers;
     }

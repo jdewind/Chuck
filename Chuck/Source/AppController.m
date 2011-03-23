@@ -34,7 +34,9 @@
 
 - (id)init
 {
-    if (self = [super init]) {
+    self = [super init];
+
+    if (self != nil) {
         appLister = [[AppLister alloc] initWithDelegate:self];
         globalHotKeyRegistrar = [[GlobalHotKeyRegistrar alloc] init];
     }
