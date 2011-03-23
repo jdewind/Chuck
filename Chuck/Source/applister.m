@@ -36,6 +36,7 @@ static BOOL directoryContainsPath(NSString *dir, NSString *path)
 
 @interface AppLister ()
 
+- (void)_actuallyRefresh;
 - (void)filterListFromExcludedItems;
 - (void)refreshFoldersToSearch;
 
@@ -150,8 +151,11 @@ static inline double getSeconds(void)
             [self refreshFoldersToSearch];
         }
 
-        [self performSelectorInBackground:@selector(_actuallyRefresh)
-                               withObject:nil];
+        dispatch_queue_t queue =
+            dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0);
+        dispatch_async(queue, ^{
+            [self _actuallyRefresh];
+        });
     }
 }
 
