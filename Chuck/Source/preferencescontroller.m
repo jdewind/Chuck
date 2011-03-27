@@ -458,7 +458,7 @@ static PreferencesController *sharedPreferencesController = nil;
 
     NSOpenPanel *openPanel = [NSOpenPanel openPanel];
     [openPanel setCanChooseDirectories:YES];
-    [openPanel setAllowedFileTypes:[NSArray arrayWithObjects:@"app", nil]];
+    [openPanel setAllowedFileTypes:[NSArray arrayWithObject:@"app"]];
     [openPanel setDirectoryURL:[NSURL URLWithString:@"/Applications"]];
     [openPanel beginSheetModalForWindow:[self window]
                       completionHandler:^(NSInteger result) {
@@ -475,7 +475,7 @@ static PreferencesController *sharedPreferencesController = nil;
     NSAutoreleasePool *pool = [[NSAutoreleasePool alloc] init];
 
     NSOpenPanel *openPanel = [NSOpenPanel openPanel];
-    [openPanel setAllowedFileTypes:[NSArray arrayWithObjects:@"app", nil]];
+    [openPanel setAllowedFileTypes:[NSArray arrayWithObject:@"app"]];
     [openPanel setDirectoryURL:[NSURL URLWithString:@"/Applications"]];
     [openPanel beginSheetModalForWindow:[self window]
                       completionHandler:^(NSInteger result) {

@@ -45,9 +45,10 @@
 
 - (BOOL)isEqual:(id)someObject
 {
-    return [someObject isKindOfClass:[self class]] &&
-           [[someObject name] isEqualToString:name] &&
-           [[someObject path] isEqualToString:path];
+    return self == someObject ||
+           ([someObject isKindOfClass:[self class]] &&
+            [[someObject name] isEqualToString:name] &&
+            [[someObject path] isEqualToString:path]);
 }
 
 - (NSUInteger)hash

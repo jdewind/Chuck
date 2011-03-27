@@ -58,9 +58,10 @@
 
 - (BOOL)isEqual:(id)someObject
 {
-    return [someObject isKindOfClass:[self class]] &&
-           [someObject keyCode] == keyCode &&
-           [someObject modifierFlags] == modifierFlags;
+    return self == someObject ||
+           ([someObject isKindOfClass:[self class]] &&
+            [someObject keyCode] == keyCode &&
+            [someObject modifierFlags] == modifierFlags);
 }
 
 @end
