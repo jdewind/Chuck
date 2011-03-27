@@ -25,7 +25,7 @@
                   backing:(NSBackingStoreType)bufferingType
                     defer:(BOOL)flag
 {
-    
+
     // Pass NSBorderlessWindowMask for the styleMask so we don't get a title
     // bar, and an NSTexturedBackgroundWindowMask so the user can drag
     // the window.
@@ -81,15 +81,26 @@
 //
 - (void)fadeInAndBecomeActive
 {
-    id animator = enableAnimations ? [self animator] : self;
-    [animator setAlphaValue:1.0];
+    if ([self enableAnimations]) {
+        [[NSAnimationContext currentContext] setDuration:0.2];
+        [[self animator] setAlphaValue:1.0];
+        [NSAnimationContext endGrouping];
+    } else {
+        [self setAlphaValue:1.0];
+    }
+
     [self makeKeyAndOrderFront:nil];
 }
 
 - (void)fadeOutAndHide
 {
-    id animator = enableAnimations ? [self animator] : self;
-    [animator setAlphaValue:0.0];
+    if ([self enableAnimations]) {
+        [[NSAnimationContext currentContext] setDuration:0.2];
+        [[self animator] setAlphaValue:0.0];
+        [NSAnimationContext endGrouping];
+    } else {
+        [self setAlphaValue:0.0];
+    }
 }
 
 #pragma mark -
