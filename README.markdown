@@ -1,8 +1,10 @@
 #[Chuck.![meet chuck](https://github.com/downloads/msanders/Chuck/stache.png)](https://github.com/downloads/msanders/Chuck/Chuck.tar.gz)
 
-Chuck is a simple, efficient app launcher with class. Unlike some other apps of its genre, Chuck is designed to be quick and simple, and to get out of your way -- just type in the first few letters of your applications and you're finished; there is nothing new to learn, and little to configure. Best of all, it has a low footprint and is essentially instantanous in all that it does. After a few minutes of use, you will forget it is there and so will your machine. (And, who wouldn't want a moustache in their menu bar?)
+Chuck is the simple, efficient app launcher with class. 
 
-Currently available for OS X 10.6 (Snow Leopard) and above.
+Chuck is designed to be quick and simple, and to get out of your way -- just type in the first few letters of your applications and you're finished; or, better yet, set up a few aliases so that switching between and launching your favorite apps will become single-character muscle memory you don't know how you lived without. Best of all, it has a very low footprint and is instantaneous in all that it does. Plus, who wouldn't want a moustache in their menu bar?
+
+Currently available for Mac OS X 10.6 (Snow Leopard) and above.
 
 ## Screenshots
 ![Main window](https://github.com/downloads/msanders/Chuck/meta.png)
