@@ -383,14 +383,16 @@ doCommandBySelector:(SEL)command
         NSMenuItem *toggleSearchMenuItem =
             [fileMenu itemWithTitle:toggleSearchPanelTitle];
 
-        unsigned short keyCode = [globalHotKeyRegistrar keyCode];
-        NSUInteger modifierFlags = [globalHotKeyRegistrar modifierFlags];
+        if ([globalHotKeyRegistrar wasModified]) {
+            unsigned short keyCode = [globalHotKeyRegistrar keyCode];
+            NSUInteger modifierFlags = [globalHotKeyRegistrar modifierFlags];
 
-        [toggleSearchStatusItem setKeyEquivalentKeyCode:keyCode];
-        [toggleSearchStatusItem setKeyEquivalentModifierMask:modifierFlags];
+            [toggleSearchStatusItem setKeyEquivalentKeyCode:keyCode];
+            [toggleSearchStatusItem setKeyEquivalentModifierMask:modifierFlags];
 
-        [toggleSearchMenuItem setKeyEquivalentKeyCode:keyCode];
-        [toggleSearchMenuItem setKeyEquivalentModifierMask:modifierFlags];
+            [toggleSearchMenuItem setKeyEquivalentKeyCode:keyCode];
+            [toggleSearchMenuItem setKeyEquivalentModifierMask:modifierFlags];
+        }
     }
 }
 

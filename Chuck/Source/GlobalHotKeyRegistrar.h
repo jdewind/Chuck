@@ -24,11 +24,13 @@ typedef OSStatus (^HotKeyBlock)();
     CGKeyCode keyCode;
     CGEventFlags modifierFlags;
     HotKeyBlock hotKeyBlock;
+    BOOL modified;
 }
 
 @property (nonatomic, copy) HotKeyBlock hotKeyBlock;
 @property (nonatomic, readonly) CGKeyCode keyCode;
 @property (nonatomic, readonly) CGEventFlags modifierFlags;
+@property (nonatomic, readonly, getter=wasModified) BOOL modified;
 
 //
 // Replaces the previous hot key with the given key code and modifiers.

@@ -32,6 +32,7 @@ static inline UInt32 NSModifierFlagsToCarbonModifiers(NSUInteger mask)
 @synthesize hotKeyBlock;
 @synthesize keyCode;
 @synthesize modifierFlags;
+@synthesize modified;
 
 - (void)dealloc
 {
@@ -68,6 +69,7 @@ static inline UInt32 NSModifierFlagsToCarbonModifiers(NSUInteger mask)
 
     keyCode = code;
     modifierFlags = modifiers;
+    modified = YES;
 
     [self registerHotKey];
 }
