@@ -12,8 +12,6 @@
 @synthesize keyCode;
 @synthesize modifierFlags;
 
-#pragma mark NSCoding protocol
-
 - (id)initWithKeyCode:(unsigned short)code
             modifiers:(NSUInteger)modifiers
 {
@@ -42,8 +40,6 @@
 
     return nil;
 }
-
-#pragma mark -
 
 - (id)encodedValue
 {
