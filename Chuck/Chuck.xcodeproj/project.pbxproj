@@ -12,7 +12,6 @@
 		0EF307A611A3279000E862A4 /* ChuckSearchPanel.m in Sources */ = {isa = PBXBuildFile; fileRef = 0EF307A511A3279000E862A4 /* ChuckSearchPanel.m */; };
 		1DDD58160DA1D0A300B32029 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1DDD58140DA1D0A300B32029 /* MainMenu.xib */; };
 		2403EA0E11B6B8980031BE63 /* NSArray+Map.m in Sources */ = {isa = PBXBuildFile; fileRef = 2403EA0D11B6B8980031BE63 /* NSArray+Map.m */; };
-		240646E911E2B45C00B57184 /* dsa_pub.pem in Resources */ = {isa = PBXBuildFile; fileRef = 240646E811E2B45C00B57184 /* dsa_pub.pem */; };
 		24253C0B11C7228600841CD5 /* NSWorkspace+LoginItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 24253C0A11C7228600841CD5 /* NSWorkspace+LoginItem.m */; };
 		2432F8FB11CC111500CC1F91 /* NSMutableArray+Map.m in Sources */ = {isa = PBXBuildFile; fileRef = 2432F8FA11CC111500CC1F91 /* NSMutableArray+Map.m */; };
 		2432F93611CC19B400CC1F91 /* stache_active.png in Resources */ = {isa = PBXBuildFile; fileRef = 2432F93411CC19B400CC1F91 /* stache_active.png */; };
@@ -21,8 +20,6 @@
 		2476347611AF81FC00CE2AC9 /* NSMenuItem+KeyCode.m in Sources */ = {isa = PBXBuildFile; fileRef = 2476347511AF81FC00CE2AC9 /* NSMenuItem+KeyCode.m */; };
 		24831C5311CFE8A80043F51F /* NSMutableSet+FromArrays.m in Sources */ = {isa = PBXBuildFile; fileRef = 24831C5211CFE8A80043F51F /* NSMutableSet+FromArrays.m */; };
 		2488ABC111AFFB0A00170025 /* NSString+FromChar.m in Sources */ = {isa = PBXBuildFile; fileRef = 2488ABC011AFFB0A00170025 /* NSString+FromChar.m */; };
-		24924D8311CF058F0012632B /* Sparkle.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 24924D8211CF058F0012632B /* Sparkle.framework */; };
-		24924D9F11CF062A0012632B /* Sparkle.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = 24924D8211CF058F0012632B /* Sparkle.framework */; };
 		24933D0611AC09F700316187 /* LoginItem.c in Sources */ = {isa = PBXBuildFile; fileRef = 24933D0511AC09F700316187 /* LoginItem.c */; };
 		24933D0B11AC0A5F00316187 /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 24933D0A11AC0A5F00316187 /* CoreFoundation.framework */; };
 		24A0676311ADFAE300B308BC /* HotKey.m in Sources */ = {isa = PBXBuildFile; fileRef = 24A0676211ADFAE300B308BC /* HotKey.m */; };
@@ -56,7 +53,6 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				24924D9F11CF062A0012632B /* Sparkle.framework in Copy Frameworks */,
 			);
 			name = "Copy Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -74,7 +70,6 @@
 		1DDD58150DA1D0A300B32029 /* English */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = English; path = English.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		2403EA0C11B6B8980031BE63 /* NSArray+Map.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSArray+Map.h"; path = "Source/NSArray+Map.h"; sourceTree = "<group>"; };
 		2403EA0D11B6B8980031BE63 /* NSArray+Map.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSArray+Map.m"; path = "Source/NSArray+Map.m"; sourceTree = "<group>"; };
-		240646E811E2B45C00B57184 /* dsa_pub.pem */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = dsa_pub.pem; sourceTree = "<group>"; };
 		24253C0911C7228600841CD5 /* NSWorkspace+LoginItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSWorkspace+LoginItem.h"; path = "Source/NSWorkspace+LoginItem.h"; sourceTree = "<group>"; };
 		24253C0A11C7228600841CD5 /* NSWorkspace+LoginItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSWorkspace+LoginItem.m"; path = "Source/NSWorkspace+LoginItem.m"; sourceTree = "<group>"; };
 		2432F8F911CC111500CC1F91 /* NSMutableArray+Map.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSMutableArray+Map.h"; path = "Source/NSMutableArray+Map.h"; sourceTree = "<group>"; };
@@ -89,7 +84,6 @@
 		24831C5211CFE8A80043F51F /* NSMutableSet+FromArrays.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSMutableSet+FromArrays.m"; path = "Source/NSMutableSet+FromArrays.m"; sourceTree = "<group>"; };
 		2488ABBF11AFFB0A00170025 /* NSString+FromChar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSString+FromChar.h"; path = "Source/NSString+FromChar.h"; sourceTree = "<group>"; };
 		2488ABC011AFFB0A00170025 /* NSString+FromChar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSString+FromChar.m"; path = "Source/NSString+FromChar.m"; sourceTree = "<group>"; };
-		24924D8211CF058F0012632B /* Sparkle.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Sparkle.framework; path = Frameworks/Sparkle.framework; sourceTree = "<group>"; };
 		24933D0411AC09F700316187 /* LoginItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LoginItem.h; path = Source/LoginItem.h; sourceTree = "<group>"; };
 		24933D0511AC09F700316187 /* LoginItem.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = LoginItem.c; path = Source/LoginItem.c; sourceTree = "<group>"; };
 		24933D0A11AC0A5F00316187 /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
@@ -142,7 +136,6 @@
 				8D11072F0486CEB800E47090 /* Cocoa.framework in Frameworks */,
 				24B370BC11A8E85500333054 /* Carbon.framework in Frameworks */,
 				24933D0B11AC0A5F00316187 /* CoreFoundation.framework in Frameworks */,
-				24924D8311CF058F0012632B /* Sparkle.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -201,7 +194,6 @@
 		1058C7A0FEA54F0111CA2CBB /* Linked Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				24924D8211CF058F0012632B /* Sparkle.framework */,
 				1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */,
 				24933D0A11AC0A5F00316187 /* CoreFoundation.framework */,
 				24B370BB11A8E85500333054 /* Carbon.framework */,
@@ -314,7 +306,6 @@
 				24A2CCAE11DADD1800AF5EE2 /* Preferences.xib */,
 				089C165CFE840E0CC02AAC07 /* InfoPlist.strings */,
 				8D1107310486CEB800E47090 /* Info.plist */,
-				240646E811E2B45C00B57184 /* dsa_pub.pem */,
 				24A93BAA11DBD4070034015F /* Credits.rtf */,
 			);
 			name = Resources;
@@ -386,7 +377,6 @@
 				24A2CCB211DADD1800AF5EE2 /* Preferences.xib in Resources */,
 				24A93BAC11DBD4070034015F /* Credits.rtf in Resources */,
 				0ECF85E111E2AE3000D65D3F /* Chuck.icns in Resources */,
-				240646E911E2B45C00B57184 /* dsa_pub.pem in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -463,10 +453,7 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				COPY_PHASE_STRIP = NO;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"\"$(SRCROOT)\"/Frameworks",
-				);
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_ENABLE_FIX_AND_CONTINUE = YES;
 				GCC_OPTIMIZATION_LEVEL = 0;
@@ -484,10 +471,7 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"\"$(SRCROOT)\"/Frameworks",
-				);
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				GCC_MODEL_TUNING = G5;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = Source/Prefix.pch;

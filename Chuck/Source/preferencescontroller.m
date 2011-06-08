@@ -343,7 +343,7 @@ static PreferencesController *sharedPreferencesController = nil;
     // TODO: Surely there's a better solution than hard-coding dimensions...
     NSUInteger height = 0;
     if (itemNumber == 1) {
-        height = 350;
+        height = 270;
     } else if (itemNumber == 2) {
         height = 400;
     } else {
