@@ -9,7 +9,7 @@
 	<key>CFBundleIconFile</key>
 	<string>Chuck.icns</string>
 	<key>CFBundleIdentifier</key>
-	<string>com.msanders.Chuck</string>
+	<string>com.chuckapp.Chuck</string>
 	<key>CFBundleInfoDictionaryVersion</key>
 	<string>6.0</string>
 	<key>CFBundleName</key>
