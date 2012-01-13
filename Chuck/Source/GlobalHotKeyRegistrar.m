@@ -57,6 +57,20 @@ static inline UInt32 NSModifierFlagsToCarbonModifiers(NSUInteger mask)
 	                    GetApplicationEventTarget(), 0, &hotKeyRef);
 }
 
+- (void)registerEscapeKey {
+  if (escapeKeyHotKeyRef == NULL) {
+    EventHotKeyID hotKeyID;
+    hotKeyID.signature = 0;
+    hotKeyID.id = 1;
+    RegisterEventHotKey(53, 0, hotKeyID, GetApplicationEventTarget(), 0, &escapeKeyHotKeyRef);    
+  }
+}
+
+- (void)unregisterEscapeKey {
+  UnregisterEventHotKey(escapeKeyHotKeyRef);
+  escapeKeyHotKeyRef = NULL;
+}
+
 - (void)setHotKeyToKeyCode:(CGKeyCode)code
               andModifiers:(CGEventFlags)modifiers
 {

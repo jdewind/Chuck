@@ -21,6 +21,7 @@ typedef OSStatus (^HotKeyBlock)();
 @interface GlobalHotKeyRegistrar : NSObject
 {
     EventHotKeyRef hotKeyRef;
+    EventHotKeyRef escapeKeyHotKeyRef;
     CGKeyCode keyCode;
     CGEventFlags modifierFlags;
     HotKeyBlock hotKeyBlock;
@@ -35,6 +36,8 @@ typedef OSStatus (^HotKeyBlock)();
 //
 // Replaces the previous hot key with the given key code and modifiers.
 //
+- (void)registerEscapeKey;
+- (void)unregisterEscapeKey;
 - (void)setHotKeyToKeyCode:(CGKeyCode)code
               andModifiers:(CGEventFlags)modifiers;
 

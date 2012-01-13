@@ -104,6 +104,7 @@
         [NSApp hide:nil];
         [searchWindow setAlphaValue:0.0];
     } else {
+        [globalHotKeyRegistrar registerEscapeKey];
         [self activateSearchPanel:nil];
     }
 
@@ -112,7 +113,9 @@
         BOOL appIsActive = [NSApp isActive];
         if (!appIsActive || [searchWindow alphaValue] == 0.0) {
             [self activateSearchPanel:nil];
+            [globalHotKeyRegistrar registerEscapeKey];
         } else if (appIsActive && [searchWindow isKeyWindow]) {
+            [globalHotKeyRegistrar unregisterEscapeKey];
             [NSApp hide:nil];
         }
 
